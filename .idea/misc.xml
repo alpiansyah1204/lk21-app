@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/expert class/lk21_fix/app/src/main/res/layout/activity_detail.xml" value="0.12" />
+        <entry key="..\:/expert class/lk21_fix/app/src/main/res/layout/movies_fragment.xml" value="0.10989583333333333" />
+        <entry key="..\:/expert class/lk21_fix/app/src/main/res/layout/tvshows_fragment.xml" value="0.12158054711246201" />
+        <entry key="..\:/expert class/lk21_fix/app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="..\:/expert class/lk21_fix/favorite/src/main/res/drawable/drawable.xml" value="0.1075" />
+        <entry key="..\:/expert class/lk21_fix/favorite/src/main/res/layout/activity_favorite.xml" value="0.10989583333333333" />
+        <entry key="..\:/expert class/lk21_fix/favorite/src/main/res/layout/movies_favorite_fragment.xml" value="0.264" />
+        <entry key="..\:/expert class/lk21_fix/favorite/src/main/res/layout/tvshows_favorite_fragment.xml" value="0.10989583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
