@@ -16,11 +16,11 @@
             android:weightSum="6"
             android:orientation="horizontal">
             <Spinner
-                android:visibility="invisible"
+                android:visibility="visible"
                 android:id="@+id/spinner"
                 android:background="@drawable/spinner_rounded"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:layout_margin="10dp"/>
         </LinearLayout>

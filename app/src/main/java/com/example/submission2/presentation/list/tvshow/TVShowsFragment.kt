@@ -137,6 +137,7 @@ class TVShowsFragment: Fragment(), CardAdapter.OnLoadMoreListener {
                         viewModel.isFound.observe(requireActivity(),observeFound())
                         viewModel.listData.observe(requireActivity(),observeData())
                     }
+          
                 }
             }
 

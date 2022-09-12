@@ -67,6 +67,49 @@ class MoviesViewModel(private val useCase: MovieUseCase) : ViewModel() {
         }
     }
 
+    fun getNowPlaying()= viewModelScope.launch(Dispatchers.IO) {
+        try {
+            val response = useCase.getNowPlayingRemoteData(pageNP)
+            withContext(Dispatchers.Main) {
+                temp++
+                if(temp == 1) {
+                    response.onStart { isLoading.value = true }.catch {
+                        isLoading.value = false
+                        isFound.value = true
+                    }.collect {
+                        when (it) {
+                            is ApiResponse.Success -> {
+                                val data = it.data
+                                if (data.result.isNotEmpty()) {
+                                    listData.value = data.result
+                                    totalPages = data.totalPages
+                                    isLoading.value = false
+                                    isFound.value = true
+                                } else {
+                                    isLoading.value = false
+                                    isFound.value = false
+                                }
+                            }
+                            is ApiResponse.Empty -> {
+                                isLoading.value = false
+                                isFound.value = false
+                            }
+                            else -> {
+                                isLoading.value = false
+                                isFound.value = false
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (e: Exception) {
+            withContext(Dispatchers.Main) {
+                isFound.value = false
+                isLoading.value = false
+            }
+        }
+    }
+
     fun onLoadMore(spinner: Int){
         temp = 0
         if(spinner == 1){
