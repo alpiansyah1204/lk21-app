@@ -45,7 +45,7 @@ class TVShowsFavoriteFragment: Fragment() {
         getJob?.cancel()
         getJob = CoroutineScope(Dispatchers.IO).launch{
             viewModel.getData()
-            delay(2000)
+            delay(3000)
             withContext(Dispatchers.Main){
                 viewModel.data.observe(viewLifecycleOwner,observer)
             }
@@ -76,7 +76,7 @@ class TVShowsFavoriteFragment: Fragment() {
                     reload()
                     getJob = CoroutineScope(Dispatchers.IO).launch{
                         viewModel.getData()
-                        delay(1200)
+                        delay(3000)
                         withContext(Dispatchers.Main){
                             viewModel.data.observe(viewLifecycleOwner,observer)
                         }
