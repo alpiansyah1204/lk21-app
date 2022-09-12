@@ -125,14 +125,6 @@ class MoviesFragment : Fragment(), CardAdapter.OnLoadMoreListener {
                         checkSpinner = 1
                         data()
                     }
-                    1 -> {
-                        reset()
-                        coroutineJob = CoroutineScope(Dispatchers.IO).launch {
-                            viewModel.getNowPlaying()
-                        }
-                        checkSpinner = 2
-                        data()
-                    }
                 }
             }
 
