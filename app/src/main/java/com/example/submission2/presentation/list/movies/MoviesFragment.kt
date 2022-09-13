@@ -161,6 +161,7 @@ class MoviesFragment : Fragment(), CardAdapter.OnLoadMoreListener {
             intent.putExtra(DetailActivity.TYPE_DETAIL, data)
             intent.flags = Intent.FLAG_ACTIVITY_NO_HISTORY
             startActivity(intent)
+            activity?.finish()
         }
         cardAdapter.onLoadMoreListener = this
         binding.list.adapter = cardAdapter

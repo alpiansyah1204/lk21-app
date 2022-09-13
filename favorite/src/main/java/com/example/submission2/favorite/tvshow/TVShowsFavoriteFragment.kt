@@ -3,6 +3,7 @@ package com.example.submission2.favorite.tvshow
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import android.view.*
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -104,6 +105,9 @@ class TVShowsFavoriteFragment: Fragment() {
                     btnPositive.layoutParams = layoutParams
                     btnNegative.layoutParams = layoutParams
                 }
+            }
+            R.id.setting -> {
+                startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
             }
         }
         return super.onOptionsItemSelected(item)

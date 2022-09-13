@@ -18,6 +18,7 @@ import com.example.submission2.core.presentation.model.tv.SearchTV
 import com.example.submission2.core.presentation.model.tv.TV
 import com.example.submission2.core.utils.Constant
 import com.example.submission2.databinding.ActivityDetailBinding
+import com.example.submission2.presentation.list.ListActivity
 import com.google.android.material.appbar.AppBarLayout
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -75,7 +76,9 @@ class DetailActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener
             finish()
         }
         else{
-            super.onBackPressed()
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
@@ -161,7 +164,7 @@ class DetailActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListener
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
         toolbar.setNavigationOnClickListener {
-            finish()
+
         }
     }
 
