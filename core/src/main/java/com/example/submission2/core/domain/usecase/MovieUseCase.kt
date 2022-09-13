@@ -19,7 +19,7 @@ class MovieUseCase(private val repository: MovieRepository) :
                 when(it){
                     is ApiResponse.Success -> {
                         val data = it.data
-                        if (!data.result.isNullOrEmpty()) {
+                        if (data.result.isNotEmpty()) {
                             emit(ApiResponse.Success(DataMapper.mapResultMovieDomainToPresentation(data)))
                         }
                     }
@@ -40,7 +40,7 @@ class MovieUseCase(private val repository: MovieRepository) :
                 when(it){
                     is ApiResponse.Success -> {
                         val data = it.data
-                        if (!data.result.isNullOrEmpty()) {
+                        if (data.result.isNotEmpty()) {
                             emit(ApiResponse.Success(DataMapper.mapResultMovieDomainToPresentation(data)))
                         }
                     }
@@ -61,7 +61,7 @@ class MovieUseCase(private val repository: MovieRepository) :
                 when(it){
                     is ApiResponse.Success -> {
                         val data = it.data
-                        if (!data.result.isNullOrEmpty()) {
+                        if (data.result.isNotEmpty()) {
                             emit(ApiResponse.Success(DataMapper.mapResultMovieDomainToPresentation(data)))
                         }
                     }

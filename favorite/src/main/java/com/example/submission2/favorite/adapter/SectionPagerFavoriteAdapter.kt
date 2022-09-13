@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.submission2.R
 import com.example.submission2.favorite.movies.MoviesFavoriteFragment
-import com.example.submission2.favorite.tvshow.TVShowsFavoriteFragment
 
 class SectionPagerFavoriteAdapter(private val mContext: Context, fm : FragmentManager
 ) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {

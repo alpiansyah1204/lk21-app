@@ -25,7 +25,7 @@ class TVRepository(
                 when(it){
                     is ApiResponse.Success -> {
                         val data = it.data
-                        if (!data.result.isNullOrEmpty()) {
+                        if (data.result.isNotEmpty()) {
                             emit(ApiResponse.Success(DataMapper.mapResultTVResponseToDomain(data)))
                         }
                     }
@@ -46,7 +46,7 @@ class TVRepository(
                 when(it){
                     is ApiResponse.Success -> {
                         val data = it.data
-                        if (!data.result.isNullOrEmpty()) {
+                        if (data.result.isNotEmpty()) {
                             emit(ApiResponse.Success(DataMapper.mapResultTVResponseToDomain(data)))
                         }
                     }
@@ -67,7 +67,7 @@ class TVRepository(
                 when(it){
                     is ApiResponse.Success -> {
                         val data = it.data
-                        if (!data.result.isNullOrEmpty()) {
+                        if (data.result.isNotEmpty()) {
                             emit(ApiResponse.Success(DataMapper.mapResultTVResponseToDomain(data)))
                         }
                     }
