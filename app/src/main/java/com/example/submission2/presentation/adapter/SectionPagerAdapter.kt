@@ -13,16 +13,14 @@ import com.example.submission2.presentation.list.tvshow.TVShowsFragment
 class SectionPagerAdapter(private val mContext: Context,fm : FragmentManager
                             ) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
     @StringRes
-    private val tabTitles = intArrayOf(R.string.tab1,R.string.tab2)
+    private val tabTitles = intArrayOf(R.string.tab1)
     private val fragmentList: ArrayList<Fragment> = ArrayList()
 
     override fun getItem(position: Int): Fragment {
         if(position ==0){
             fragmentList.add(position,MoviesFragment())
         }
-        else{
-            fragmentList.add(position,TVShowsFragment())
-        }
+
         return fragmentList[position]
     }
 

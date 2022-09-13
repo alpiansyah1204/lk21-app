@@ -125,6 +125,7 @@ class MoviesFragment : Fragment(), CardAdapter.OnLoadMoreListener {
                         checkSpinner = 1
                         data()
                     }
+
                 }
             }
 

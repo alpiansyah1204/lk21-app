@@ -14,7 +14,10 @@
         app:layout_collapseMode="pin"
         app:tabGravity="fill"
         app:tabMode="fixed"
-        app:tabTextColor="@color/pureWhite" />
+        app:tabBackground="@color/pureWhite"
+        android:foregroundTint="@color/pureWhite"
+        android:background="@color/pureWhite"
+        app:tabTextColor="@color/pureBlack" />
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pagers"
         android:layout_width="match_parent"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab1">All Movies</string>
+    <string name="tab2">series</string>
+    <string name="tab3">Favorite All Movies</string>
+    <string name="title">Title:</string>
+    <string name="empty">Empty Item</string>
+    <string name="notfound">The item not found because the action is interrupted</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="search">Search</string>
+    <string name="reviews">User Review:</string>
+    <string name="review">%s%% User Score </string>
+    <string name="not_found">Data Not Found</string>
+    <string name="Fav">favorite</string>
+</resources>

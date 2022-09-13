@@ -86,8 +86,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:weightSum="2"
+                    android:weightSum="3"
                     android:orientation="horizontal">
+                    <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                 </LinearLayout>
@@ -95,8 +96,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:weightSum="2"
+                    android:weightSum="3"
                     android:orientation="horizontal">
+                    <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                 </LinearLayout>
@@ -104,8 +106,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:weightSum="2"
+                    android:weightSum="3"
                     android:orientation="horizontal">
+                    <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                 </LinearLayout>
@@ -113,8 +116,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:weightSum="2"
+                    android:weightSum="3"
                     android:orientation="horizontal">
+                    <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                     <include layout="@layout/loading_item_card" />
                 </LinearLayout>
